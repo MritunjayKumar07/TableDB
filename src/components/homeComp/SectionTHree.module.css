@@ -1,0 +1,252 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+.Section {
+    background: #f3f5ff;
+    color: rgb(9, 9, 19);
+    height: auto;
+    padding-bottom: 4em;
+    padding-top: 4em;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+}
+
+.Section h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 34px;
+    letter-spacing: 2px;
+}
+
+.Section {
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.Section h1 strong {
+    color: orangered;
+}
+
+.SectionThree {
+    display: flex;
+    margin: 30px 10%;
+    flex-direction: row;
+}
+
+.Dropdown {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+.details {
+    margin-right: 50px;
+}
+
+.details>summary {
+    list-style: none;
+    font-size: x-large;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.Dropdown .active {
+    background-color: #376149;
+    border-radius: 5px;
+    color: #f3f5ff;
+    width: 100%;
+}
+
+.Dropdown .active::before {
+    content: "|";
+    color: #f3f5ff;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.details>summary::before {
+    content: "|";
+    color: #376149;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.details .Versions {
+    background-color: #21313c;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 3px;
+    color: #f3f5ff;
+    font-size: 16px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    background-color: rgb(9, 9, 19);
+    border-radius: 8px;
+    color: #f3f5ff;
+    padding: 3px;
+    text-align: left;
+}
+
+.content strong {
+    text-align: left;
+}
+
+.content .Versions_con ul {
+    text-align: left !important;
+}
+
+.content .Versions_con ul li {
+    background-color: #376149;
+    color: #f3f5ff;
+    font-weight: 500;
+    font-size: 16px;
+    height: 20px;
+    line-height: 20px;
+    margin: 4px 5px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.content .Versions_con .mainContent {
+    display: grid;
+    grid-template-columns: min(2rem, 5vw) [center-start] 1fr [center-end] min(2rem, 5vw);
+    grid-column: center;
+    width: 100%;
+}
+
+.cards_wrapper {
+    grid-column: center-start/-5;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1rem;
+    overflow: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    padding-right: min(2rem, 5vw);
+}
+
+.cards_wrapper .card {
+    display: grid;
+    flex-direction: row;
+    place-content: left;
+    background-color: #21313c;
+    border-radius: 8px;
+    color: #15928A;
+    font-size: 1.5rem;
+    height: 12rem;
+    width: 20rem;
+    min-width: 20rem;
+    padding: 10px;
+}
+
+
+/* What's New */
+/* Card Blog */
+.cards_wrapper .card span {
+    border: 2px solid #f3f5ff;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.cards_wrapper .card strong {
+    /* white-space: nowrap;  use to not write multiple line  */
+    font-size: 17px;
+    height: 2rem;
+    line-height: 2rem;
+    width: auto;
+    /* width: 19rem; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cards_wrapper .card p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-family: sans-serif, serif;
+    color: #f3f5ff;
+    font-weight: 400;
+    letter-spacing: 1px;
+    overflow: hidden;
+    height: 60px;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.cards_wrapper .card a {
+    text-decoration: none;
+    border: none;
+    background: none;
+    color: #f3f5ff;
+    font-weight: 600;
+    font-size: medium;
+    letter-spacing: 1.5px;
+    text-align: right;
+    cursor: pointer;
+}
+
+.cards_wrapper .card a svg{
+    margin-left: 10px;
+}
+
+.cards_wrapper .card a:hover svg{
+    color: #15928A;
+}
+
+@media (max-width: 800px) {
+    .SectionThree {
+        display: flex;
+        margin: 30px 5%;
+        flex-direction: column;
+    }
+
+    .Dropdown {
+        width: 100%;
+        margin-bottom: 4em;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .details {
+        margin-right: 0px;
+    }
+
+    .details>summary {
+        font-size: 18px;
+    }
+
+    .cards_wrapper .card {
+        width: 10rem;
+        min-width: 10rem;
+    }
+
+    .content .Versions_con ul li {
+        padding: 5px;
+    }
+
+
+    .Section h1 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+    
+    .Section span{
+        font-size: 16px;
+    }
+}

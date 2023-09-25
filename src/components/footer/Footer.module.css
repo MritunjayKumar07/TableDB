@@ -1,0 +1,98 @@
+.footer {
+    color: whitesmoke;
+    background: rgb(9, 9, 19);
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    margin-bottom: -5vh;
+    padding-top: 2vh;
+    bottom: 0;
+    left: 0;
+}
+
+
+.footer .heading {
+    color: whitesmoke;
+    max-width: 1010px;
+    width: 90%;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.heading h2 img {
+    width: 4.5rem;
+    height: 4.5rem;
+    
+}
+
+.footer .content {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1.5rem;
+}
+
+.footer .content p {
+    margin-bottom: 1.3rem;
+    display: flex;
+    cursor: pointer;
+}
+
+.content a{
+    color: whitesmoke;
+}
+
+.footer svg {
+    text-decoration: none;
+    color: #000;
+    width: 24px;
+    margin-right: 10px;
+}
+
+.footer .content p:hover {
+    border-bottom: 1px solid whitesmoke;
+}
+
+.footer .content h4 {
+    margin-bottom: 1.3rem;
+    font-size: 19px;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 2rem;
+    height: 6vh;
+    line-height: 6vh;
+}
+
+footer hr {
+    margin: 2rem 0;
+}
+
+@media (max-width: 767px) {
+
+    .footer .content {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+    }
+
+    .footer {
+        position: unset;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .footer .content,
+    .footer {
+        font-size: 14px;
+    }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+    .footer {
+        position: unset;
+    }
+}

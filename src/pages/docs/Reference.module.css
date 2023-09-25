@@ -1,0 +1,16 @@
+.LearnBox {
+    text-align: left;
+    margin-right: 20px;
+    overflow-y: scroll;
+    margin-left: 10px;
+    height: 80vh;
+}
+
+.LearnBox p {
+    padding-left: 10px;
+}
+
+.LearnBox a {
+    color: #2ea44f;
+    text-decoration: none;
+}

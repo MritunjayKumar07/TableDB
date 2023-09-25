@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600;700&family=Titillium+Web:wght@200;300;400;700;900&display=swap');
+
+.section {
+    background: rgb(9, 9, 19);
+    color: whitesmoke;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    align-items: center;
+
+}
+
+.Home {
+    margin-top: 22vh;
+    margin-bottom: 10vh;
+    display: flex;
+    width: 80vw;
+}
+
+.Home .ImageSide {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    align-items: center;
+}
+
+.Home .ImageSide img {
+    width: 75%;
+}
+
+.Home .ImageSide p {
+    font-family: 'Titillium Web', sans-serif;
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 18px;
+    padding-left: 5px;
+    border-left: 6px solid #376149;
+    cursor: pointer;
+}
+
+.Home .ImageSide p::after {
+    content: " 🡆";
+    color: #376149;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.Home .ImageSide p:hover {
+    text-decoration: underline;
+    text-decoration-color: #376149;
+}
+
+.Home .ContentSide {
+    margin-top: 10%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    letter-spacing: 1px;
+
+}
+
+@media (max-width: 650px) {
+    .Home {
+        flex-direction: column;
+    }
+
+    .Home .ContentSide {
+        width: 100%;
+
+    }
+
+    .Home .ImageSide {
+        margin-top: 5%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        place-items: center;
+        align-items: center;
+    }
+
+    .Home .ImageSide {
+        width: 60%;
+    }
+}

@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600;700&family=Titillium+Web:wght@200;300;400;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+#mainHead {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+}
+
+#Heading {
+    background-color: #13aa52;
+    width: 100%;
+    text-align: center;
+    line-height: 26px;
+    height: 30px;
+}
+
+#Heading a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-indent: 50px;
+    cursor: pointer;
+}
+
+#Heading a button {
+    border: 1.5px solid whitesmoke;
+    background: none;
+    padding: 3px 10px;
+    border-radius: 25px;
+    color: whitesmoke;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 65px;
+    background: rgb(9, 9, 19);
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    color: aliceblue;
+    text-decoration: none;
+    display: flex;
+    position:absolute;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    padding: 4%;
+    width: 40%;
+}
+
+.brand svg {
+    font-size: 35px !important;
+    color: aliceblue !important;
+}
+
+.brand img {
+    height: 55px;
+}
+
+.brand h3 {
+    margin-left: 5%;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+.navbar {
+    position: relative;
+    left: 40%;
+    width: 60%;
+    padding: 5%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchBox {
+    position: relative;
+    width: 50%;
+    display: flex;
+}
+
+.searchBox input {
+    width: 90%;
+    height: 35px;
+    border: none;
+    border-radius: 8px;
+    padding: 1%;
+    text-indent: 10px;
+    background: whitesmoke;
+    font-size: 18px;
+}
+
+#searchInput {
+    position: relative;
+    left: -30px;
+    top: 5px;
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(77, 77, 77);
+    cursor: pointer;
+    z-index: 221;
+}
+
+ul {
+    width: 100%;
+    float: right;
+    height: 49px;
+    overflow: hidden;
+    text-align: center !important;
+}
+
+ul li {
+    cursor: pointer;
+    display: inline-block;
+    color: aliceblue !important;
+    margin-left: 5%;
+    padding: 1%;
+    transition: all 0.5s ease;
+    height: 40px;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center !important;
+}
+
+
+ul li #headIcon {
+    display: block;
+}
+
+ul li svg {
+    display: block;
+    font-size: 22.5px;
+}
+
+ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 14px;
+    visibility: hidden;
+    transition: all 2s ease;
+}
+
+ul li:hover a {
+    visibility: visible;
+}
+
+ul li a:hover {
+    font-weight: 600;
+}
+
+ul li a:active,
+:focus {
+    display: inline;
+}
+
+#menuIcon {
+    display: none;
+}
+
+
+
+@media (max-width: 800px) {
+    #menuIcon {
+        display: block;
+        position: fixed;
+        left: -5px;
+        font-size: 50px;
+        margin-left: 90%;
+        padding: 2%;
+        border-radius: 4px;
+        cursor: pointer;
+        color: whitesmoke;
+        z-index: 222;
+    }
+
+    .navbar {
+        position: relative;
+        display: block;
+        width: 49.5%;
+
+    }
+
+    .navbarAction {
+        display: none;
+    }
+
+    .navbar ul {
+        position: absolute;
+        width: 92%;
+        height: 100vh;
+        background-color: rgb(8, 9, 19);
+    }
+
+    .navbar ul li {
+        line-height: 50px;
+        display: flex;
+        margin-top: 15px;
+        width: 100%;
+        height: 50px;
+        text-align: left;
+        position: relative;
+        top: 40px;
+        left: 0%;
+    }
+
+    .navbar ul li svg {
+        margin-top: 5px;
+        font-size: 28.5px;
+    }
+
+    .searchBox {
+        position: relative;
+        top: 55px;
+        left: 5%;
+        width: 100%;
+        z-index: 221;
+    }
+
+    ul li #headIcon {
+        display: inline-block;
+        font-size: 16px;
+        padding: 2%;
+        width: 100%;
+        left: 5%;
+    }
+
+    ul li:hover {
+        border-radius: 6px;
+        background: whitesmoke;
+        color: rgb(8, 9, 19);
+    }
+
+    ul li:hover a {
+        color: rgb(8, 9, 19);
+    }
+
+    ul li a {
+        margin-top: -10px;
+        font-family: 600;
+        visibility: visible;
+    }
+}
+
+@media (max-width: 532px) {
+    #Heading {
+        line-height: 26px;
+        height: 55px;
+    }
+    #Heading a {
+        font-size: auto;
+        letter-spacing: normal;
+    }
+}
+
+@media (max-width: 500px) {
+    #menuIcon {
+        margin-left: 85%;
+    }
+}
+
+@media (max-width: 400px) {
+    #menuIcon {
+        margin-left: 85%;
+    }
+
+    .searchBox {
+        position: relative;
+        width: 200%;
+        margin-left: -90%;
+        margin-top: 5%;
+        margin-right: 10%;
+        display: flex;
+    }
+
+}
+
+@media (max-width: 300px) {
+    #menuIcon {
+        margin-left: 80%;
+    }
+}

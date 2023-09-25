@@ -1,0 +1,116 @@
+.SectionFive{
+    background: #090913;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    place-items: center;
+    color: aliceblue;
+}
+.inner{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    display: flex;
+    justify-content: space-around;
+    place-items: center;
+    flex-direction: row;
+    width: 80%;
+}
+
+.left{
+    width: 45%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: left;
+}
+
+.searchBox {
+    margin-top: 10px;
+    position: relative;
+    width: auto;
+    display: flex;
+}
+
+.searchBox input {
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-radius: 8px;
+    padding: 1%;
+    text-indent: 10px;
+    background: whitesmoke;
+    font-size: 18px;
+}
+
+#searchInput {
+    background: whitesmoke;
+    position: relative;
+    left: -30px;
+    top: 5px;
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(77, 77, 77);
+    cursor: pointer;
+    z-index: 221;
+}
+
+
+.right{
+    width: 55%;
+    background-color: #21313c;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.right head{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    text-align: left;
+}
+
+.dot{
+width: 10px;
+height: 10px;
+background: #fff;
+margin: 3px;
+border-radius: 100%;
+}
+
+.dot:nth-child(1){
+    background: orangered;
+}
+.dot:nth-child(2){
+    background: yellow;
+}
+.dot:nth-child(3){
+    background: green;
+}
+
+
+.right iframe, pre{
+    width: 100%;
+    margin-top: 8px;
+    border-radius: 8px;
+    border: 2px solid whitesmoke;
+    background: #000;
+    height: 50vh;
+    overflow: scroll;
+}
+
+
+@media (max-width: 800px){
+    .inner{
+        width: 80%;
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+        margin-right: 5%;
+    }
+    .right{
+        margin-top: 25px;
+        width: 100%;
+    }
+}
