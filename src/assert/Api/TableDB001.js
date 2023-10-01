@@ -38,8 +38,9 @@ export const clearTDB = async (userData) => {
     const params = `action=clearTDB&clearTDB=${userData}`; 
     return fetchDataFromAPI(params); 
 }
-export const addSingleTDBData = async (userData) => {
-    const params = `action=addSingleTDBData&addSingleTDBData=${userData}`; 
+export const addSingleTDBData = async (org,room,value1,value2,value3) => {
+    // https://script.google.com/macros/s/AKfycbyOm6P2StGc8wisiCUcIxYcaJB9-oaW1E2f_oDaY5u_gsdCubO8VYqDiOmr25S_3EUm/exec?action=addSingleTDBData&addSingleTDBData=1mCcZJUIPQ63mEhLKLv-nyKdRBoUYMWbsbsfH5r8-xDY,Organization,mk09,mk,kkkkkkkk
+    const params = `action=addSingleTDBData&addSingleTDBData=${org},${room},${value1},${value2},${value3}`;
     return fetchDataFromAPI(params); 
 }
 export const updateTDBData = async (userData) => {

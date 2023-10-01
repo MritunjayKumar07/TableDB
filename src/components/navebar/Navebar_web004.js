@@ -29,35 +29,35 @@ const Navebar_web004 = () => {
               <input type='text' placeholder='Search her...' />
               <FaSearch id={css.searchInput} />
             </div>
-            <ul>
+            <ul id={css.navUl}>
               <Link to={'/home'}>
                 <li>
                   <AiFillHome />
-                  <a href='#' id={css.headIcon}>Home</a>
+                  {/* <a href='#' id={css.headIcon}>Home</a> */}
                 </li>
               </Link>
               <Link to={'/'}>
                 <li>
                   <MdAccountCircle />
-                  <a href='#' id={css.headIcon}>Profile</a>
+                  {/* <a href='#' id={css.headIcon}>Profile</a> */}
                 </li>
               </Link>
               <Link to={'/'}>
                 <li>
                   <BiSolidHelpCircle />
-                  <a href='#' id={css.headIcon}>Help</a>
+                  {/* <a href='#' id={css.headIcon}>Help</a> */}
                 </li>
               </Link>
               <Link to={'/'}>
                 <li>
                   <AiTwotoneLock />
-                  <a href='#' id={css.headIcon}>Account</a>
+                  <Link to={'/signup'} id={css.headIcon}>Account</Link>
                 </li>
               </Link>
               <Link to={'/'}>
                 <li>
                   <FaSignOutAlt />
-                  <a href='#' id={css.headIcon}>SignOut</a>
+                  {/* <a href='#' id={css.headIcon}>SignOut</a> */}
                 </li>
               </Link>
             </ul>

@@ -1,0 +1,83 @@
+body {
+    background: #090913;
+}
+
+.Container {
+    width: 100%;
+    height: 100%;
+    /* height: 100vh; */
+    background: rgb(9, 9, 19);
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    position: absolute;
+}
+
+.Container .Box {
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    place-items: center;
+    background: #21313c;
+    padding: 18px;
+    border-radius: 8px;
+    color: #13aa52;
+    border: 1px solid #c3c3c3;
+    box-shadow: rgba(181, 181, 255, 0.25) 0px 6px 12px -2px, rgba(255, 255, 255, 0.3) 0px 3px 7px -3px;
+}
+
+.Container .Box input {
+    border: 1px solid #f0f2fc;
+    height: 30px;
+    /* width: 500px; */
+    width: 90%;
+    padding: 2px 5px;
+    border-radius: 8px;
+    background: none;
+    color: #c3c3c3;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.Container .Box button {
+    cursor: pointer;
+    border: none;
+    background: #13aa52;
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 12px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    transition: all 1.5s;
+}
+
+.Container .Box button:hover {
+    background: #090913;
+    color: #f0f2fc;
+}
+
+.Container .Box .other .Link {
+    color: #f0f2fc;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 650px) {
+    .Container .Box {
+        width: 300px;
+    }
+}
+
+
+@media (max-width: 350px) {
+    .Container .Box {
+        width: auto;
+    }
+}

@@ -52,7 +52,7 @@ export default function SectionFive() {
                         <div>
                             <span className='span'>TEST YOUR DATA !</span>
                             <p className='head'>Convert your<strong className='strong'> GOOGLE DATA</strong>.</p>
-                            <p className='para'>Test applications on the Basics of your google drive for developer platform.
+                            <p className='para'>Test applications on the Basis of your google drive for developer platform.
                                 Edge user stories and insights from AI-powered event driven apps.
                             </p>
                             <div className={css.searchBox}>
@@ -61,7 +61,7 @@ export default function SectionFive() {
                             </div>
                             <div className='buttunSec'>
                                 <button className='button' onClick={handleOutput}>RUN ⮕ </button>
-                                {load?"":"Dont shair this url. Loading your Data..."}
+                                {load?"":"Dont share this url. Loading your Data..."}
                             </div>
                         </div>
                     </div>

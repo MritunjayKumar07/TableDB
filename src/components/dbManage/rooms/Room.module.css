@@ -1,2 +1,384 @@
-#Room{
+#Room {
+    margin: 0;
+    padding: 0;
+    /* height: auto; */
+    height: 100vh;
+    /* height: 100%; */
+    display: flex;
+    overflow: hidden;
+}
+
+.body {
+    width: 100%;
+    margin-top: 90px;
+    background: #090913;
+    color: #f0f2fc;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1% 0;
+}
+
+#RoomSideMenu {
+    border-radius: 6px;
+    width: 180px;
+    background: #21313c;
+    padding-left: 32px;
+    padding-top: 2%;
+    transition: all 0.8s;
+}
+
+#RoomSideMenu .menu {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5px;
+    place-items: center;
+}
+
+#RoomSideMenu .menu svg {
+    font-size: 36px;
+    color: #13aa52;
+}
+
+#RoomSideMenu hr {
+    background: #f0f2fc;
+    height: 0.7px;
+    margin-bottom: 5px;
+}
+
+#RoomSideMenu ul::-webkit-scrollbar {
+    width: 0em;
+    height: 0.2em;
+}
+
+#RoomSideMenu ul::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+#RoomSideMenu ul::-webkit-scrollbar-thumb {
+    border-radius: 12px;
+    background-color: #13aa52;
+    outline: 1px solid slategrey;
+}
+
+#RoomSideMenu ul {
+    margin-top: 10px;
+    max-height: 350px !important;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+#RoomSideMenu .inline {
+    display: inline;
+}
+
+#RoomSideMenu ul li {
+    list-style: none;
+    cursor: pointer;
+    padding: 5px 5px;
+    transition: all 0.9s;
+}
+
+#RoomSideMenu details>summary {
+    list-style: none;
+}
+
+#RoomSideMenu .button2 {
+    background: none !important;
+    border: 2px solid #13aa52;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px;
+    margin-top: 10px;
+    color: #f0f2fc;
+    transition: all 0.8s;
+    cursor: pointer;
+}
+
+#RoomSideMenu .button2:hover {
+    background: #13aa52 !important;
+    border-radius: 22px;
+    font-size: 16px;
+    color: #21313c;
+}
+
+#RoomSideMenu ul li:hover {
+    background-color: #090913;
+    border-left: 3px solid #13aa52;
+    border-right: 3px solid #13aa52;
+    border-radius: 4px 2px 2px 4px;
+}
+
+#RoomSideMenu .img {
+    position: absolute;
+    bottom: 20px;
+    width: 100px;
+}
+
+#RoomSideMenu details>.li {
+    padding-left: 8px;
+    border-top: 3px solid #21313c;
+}
+
+#RoomSideMenu .li:hover {
+    color: orangered;
+}
+
+#Room .body #RoomPage {
+    margin: 15px;
+    width: 100%;
+}
+
+#Room .body #RoomPage .RoomPageTop {
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+#Room .body #RoomPage .RoomPageTop .left {
+    width: 100%;
+    color: #13aa52 !important;
+}
+
+#Room .body #RoomPage .RoomPageTop .buttons {
+    display: inline;
+    position: relative;
+    text-align: right;
+    float: right;
+    width: 100%;
+    cursor: pointer !important;
+    margin-bottom: 20px;
+}
+
+#Room .body #RoomPage .RoomPageTop .svg {
+    position: relative;
+    background: none;
+    border: none;
+    top: 6px;
+    right: 12px;
+    color: #13aa52;
+    font-size: 25px;
+}
+
+#Room .body #RoomPage .RoomPageTop .button {
+    background: #13aa52;
+    padding: 8px 5px;
+    border: none;
+    border-radius: 8px;
+    color: #f0f2fc;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: inherit;
+}
+
+#Room .body #RoomPage .Data .tabData {
+    overflow: auto;
+    width: 100%;
+}
+
+#Room .body #RoomPage .Data table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+}
+
+#Room .body #RoomPage .Data table th {
+    color: #13aa52;
+}
+
+#Room .body #RoomPage .Data table th,
+td {
+    text-overflow: ellipsis;
+    text-align: left;
+    padding-left: 8px;
+    padding-right: 100px;
+}
+
+#Room .body #RoomPage .Data table td {
+    padding-right: 8px;
+}
+
+#Room .body #RoomPage .Data table tr:nth-child(even) {
+    background-color: #21313ca5;
+}
+
+#Room .body #RoomPage .Data table svg {
+    border: 2px solid #13aa52;
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 24px;
+    margin-top: 8px;
+    padding: 9px;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+#Room .body #RoomPage .Data table svg:hover {
+    background: #13aa52;
+}
+
+.AddOrg {
+    text-align: center;
+}
+
+.AddOrg h1 {
+    color: #13aa52;
+}
+
+.AddOrg .box {
+    display: flex !important;
+    justify-content: space-around;
+    place-items: center;
+    flex-direction: column;
+    margin: 100px 0;
+}
+
+.AddOrg .box input {
+    border: 2px solid #f0f2fc;
+    background: none;
+    width: 60%;
+    height: 25px;
+    margin-bottom: 65px;
+    border-radius: 6px;
+    color: #858585;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 6px;
+}
+
+
+.AddOrg .box button {
+    border: 2px solid #f0f2fc;
+    background: none;
+    margin-bottom: 65px;
+    border-radius: 25px;
+    color: #858585;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 25px;
+    background: #13aa52;
+    color: #21313c;
+    transition: all 1.5s;
+    cursor: pointer;
+}
+
+.AddOrg .box button:hover {
+    background: #21313c;
+    color: #f0f2fc;
+}
+
+
+@media (max-width: 800px) {
+    #Room .body #RoomPage .RoomPageTop .svg {
+        font-size: 20px;
+    }
+
+    #Room .body #RoomPage .RoomPageTop .button {
+        padding: 5px;
+        font-size: 16px;
+    }
+
+    #Room .body #RoomPage .RoomPageTop .left h1 {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 650px) {
+    #RoomSideMenu {
+        margin-top: 30px;
+        padding-top: 5px;
+    }
+
+    #RoomSideMenu ul {
+        margin-top: 20px;
+        max-height: 350px !important;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+
+    #Room .body #RoomPage .RoomPageTop .buttons {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    #Room .body #RoomPage .RoomPageTop .svg {
+        margin-left: 13px;
+    }
+
+    #Room .body #RoomPage {
+        position: relative;
+        padding-top: 25px;
+        margin: 15px;
+        width: 100%;
+    }
+
+    #Room .body #RoomPage .Data table {
+        padding-right: 200px !important;
+    }
+
+    #Room .body #RoomPage .Data table th,
+    td {
+        width: 100%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: pre;
+        padding-right: 50px;
+    }
+
+    #RoomSideMenu .img {
+        position: absolute;
+        bottom: 10px;
+        width: 80px;
+    }
+
+}
+
+
+
+
+.popup{
+    width: 100%;
+    height: 100%;
+    background: #090913;
+    color: #f0f2fc;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    place-items: center;
+}
+
+.popup .popupInner{
+    width: auto;
+    height: auto;
+    background: #21313c;
+    border-radius: 12px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    place-items: center;
+}
+
+.popup .popupInner svg{
+    font-size: 35px;
+}
+
+.popup .popupInner button{
+    margin: 15px;
+    width: 90%;
+    height: 35px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #f0f2fc;
+    border: none;
+    background: #13aa52;
+    border-radius: 12px;
+    transition: all 0.8s;
+    cursor: pointer;
+}
+
+.popup .popupInner button:hover{
+    color: #f0f2fc;
+    background: #090913;
 }
